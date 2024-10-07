@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikopox - Download</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f4f4f4, #e2e2e2);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        .button {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 6px 15px rgba(0, 86, 179, 0.6);
+        }
+        .button::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: linear-gradient(45deg, rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3));
+            transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+            border-radius: 50%;
+            z-index: 0;
+            transform: translate(-50%, -50%) scale(0);
+        }
+        .button:hover::after {
+            width: 400%;
+            height: 400%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0;
+        }
+        .button span {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Rikopox</h1>
+    <p>Download the app using one of the links below:</p>
+    
+    <a href="https://rikopox.github.io/rikopox/Rikopox_V1.apk" class="button"><span>Direct Download</span></a>
+    <a href="https://www.mediafire.com/file/gfezp1i255qa1im/Rikopox_V1.apk/file" class="button"><span>Mediafire</span></a>
+    <a href="https://drive.google.com/file/d/1SC4UjgiFNkFobBt7CfROOcYLxYtzOVx4/view?usp=sharing" class="button"><span>Google Drive</span></a>
+</div>
+
+</body>
+</html>
